@@ -7,9 +7,7 @@
 <meta name="description" content="Тихая гавань — загородный ресторан на территории клуба «Литвиново». Русская и европейская кухня, свежая рыба, веранда у воды и банкеты.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#fbf7ed">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="https://litvinovoclub.ru/favicon.ico" sizes="any">
 <!-- Замените на реальный адрес страницы после публикации -->
 <link rel="canonical" href="https://litvinovoclub.ru/restoran-tihaya-gavan/">
 
@@ -378,6 +376,7 @@ h3{font-size:28px;line-height:1.08}
   .section-head{display:block}.section-head p{margin-top:15px}
   .contact-info{grid-template-columns:1fr}
   .contact-card,.map-card{min-height:300px}
+  .contact-card{padding:32px 20px}
   .footer-top,.footer-bottom{display:block}
   .footer-nav{margin-top:30px}
   .footer-bottom span{display:block;margin-top:8px}
@@ -851,6 +850,10 @@ if(galleryTrack){
 }
 
 function openPdf(url){
+  if(window.matchMedia("(max-width:980px)").matches){
+    window.open(url,"_blank","noopener");
+    return;
+  }
   document.getElementById("pdfFrame").src=url;
   openModal("pdfModal");
 }
