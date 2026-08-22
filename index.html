@@ -361,12 +361,18 @@ h3{font-size:28px;line-height:1.08}
   .promo-card.wide{grid-column:span 1}
   .show-desktop{display:none}
   .show-mobile{display:inline-flex}
+  .header{padding:14px 0}
+  .brand-mark{width:44px}
+  .brand{font-size:26px;gap:7px}
+  .icon-btn.mobile-menu{width:38px;height:38px}
+  .icon-btn.mobile-menu svg{width:16px;height:16px}
+  .hero{padding-top:100px}
 }
 @media (max-width:640px){
   .wrap{width:min(var(--max),calc(100% - 28px))}
   .section{padding:76px 0}
   #faq{padding:40px 0}
-  .hero{padding-top:110px}
+  .hero{padding-top:92px}
   h1{font-size:48px}
   h2{font-size:42px}
   .hero-gallery{margin-top:55px}
@@ -383,6 +389,9 @@ h3{font-size:28px;line-height:1.08}
   .modal{padding:26px 20px}
   .promo-card:not(.has-image){min-height:150px}
   .promo-card:not(.has-image) .promo-body{padding:22px 24px}
+  .header{padding:12px 0}
+  .brand-mark{width:36px}
+  .brand{font-size:22px;gap:6px}
 }
 </style>
 </head>
@@ -454,7 +463,7 @@ m-88 -106 c33 -15 77 -74 57 -74 -12 0 -108 89 -97 90 4 0 22 -7 40 -16z m156
   </div>
 </header>
 
-<div class="mobile-panel" style="position:fixed;inset:0;background:var(--bg);z-index:19;padding:110px 28px;display:none">
+<div class="mobile-panel" style="position:fixed;inset:0;background:var(--bg);z-index:19;padding:90px 28px;display:none">
   <div style="display:grid;gap:22px;font-size:28px;font-weight:800">
     <a href="#menu" onclick="this.closest('.mobile-panel').classList.remove('open')">Меню</a>
     <a href="#news" onclick="this.closest('.mobile-panel').classList.remove('open')">События и акции</a>
